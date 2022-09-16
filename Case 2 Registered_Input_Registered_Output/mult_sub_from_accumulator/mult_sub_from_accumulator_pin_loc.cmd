@@ -1,0 +1,1 @@
+/home/eda/rapidsilicon/Raptor_0.2.8/bin/pin_c --csv /home/eda/rapidsilicon/Raptor_0.2.8/share/raptor/etc/devices/gemini/Gemini_Pin_Table.csv --pcf mult_sub_from_accumulator_openfpga.pcf --blif mult_sub_from_accumulator_post_synth.blif --output mult_sub_from_accumulator_pin_loc.place --assign_unconstrained_pins in_define_order

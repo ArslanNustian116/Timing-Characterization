@@ -1,0 +1,25 @@
+ 
+# Yosys synthesis script for mult_unsigned
+# Read source files
+verific -vlog-incdir 
+verific -vlog-libdir 
+verific -vlog-define 
+verific -vlog2k /home/users/amajid/part_1/./rtl/mult_unsigned.v
+verific -vlog2k /home/users/amajid/part_1/./rtl/RS_DSP2_MULTACC.v
+verific -import mult_unsigned
+
+
+# Technology mapping
+hierarchy -top mult_unsigned
+
+setattr -set keep 1 w:\clk
+
+
+plugin -i synth-rs
+
+synth_rs -tech genesis -top mult_unsigned -de         -de_max_threads -1   
+
+# Clean and output blif
+write_blif mult_sub_from_accumulator_post_synth.blif
+write_verilog -noexpr -nodec -norename mult_sub_from_accumulator_post_synth.v
+  

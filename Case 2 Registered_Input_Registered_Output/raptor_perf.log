@@ -1,0 +1,14 @@
+# Perf log file
+# Created: Fri Sep 16 15:58:40 2022
+
+[ 15:58:40 ] Synthesize has started
+[ 15:58:40 ] Packing has started
+[ 15:58:40 ] GlobalPlacement has started
+[ 15:58:40 ] Placement has started
+[ 15:58:40 ] Route has started
+[ 15:58:40 ] Command: /home/eda/rapidsilicon/Raptor_0.2.8/bin/vpr /home/eda/rapidsilicon/Raptor_0.2.8/share/raptor/etc/devices/gemini/gemini_vpr.xmle mult_sub_from_accumulator_post_synth.blif --sdc_file mult_sub_from_accumulator_openfpga.sdc --route_chan_width 180 --suppress_warnings check_rr_node_warnings.log,check_rr_node --clock_modeling ideal --timing_report_npaths 100 --absorb_buffer_luts off --constant_net_method route --timing_report_detail detailed --post_place_timing_report mult_sub_from_accumulator_post_place_timing.rpt --device 78x66 --allow_dangling_combinational_nodes on --route
+[ 15:59:20 ] Duration: 40386 ms. Max utilization: 958 MB
+[ 15:59:20 ] TimingAnalysis has started
+[ 15:59:20 ] Command: /home/eda/rapidsilicon/Raptor_0.2.8/bin/vpr /home/eda/rapidsilicon/Raptor_0.2.8/share/raptor/etc/devices/gemini/gemini_vpr.xmle mult_sub_from_accumulator_post_synth.blif --sdc_file mult_sub_from_accumulator_openfpga.sdc --route_chan_width 180 --suppress_warnings check_rr_node_warnings.log,check_rr_node --clock_modeling ideal --timing_report_npaths 100 --absorb_buffer_luts off --constant_net_method route --timing_report_detail detailed --post_place_timing_report mult_sub_from_accumulator_post_place_timing.rpt --device 78x66 --allow_dangling_combinational_nodes on --analysis
+[ 15:59:42 ] Duration: 21534 ms. Max utilization: 953 MB
+[ 15:59:42 ] GenerateBitstream has started
